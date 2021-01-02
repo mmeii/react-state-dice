@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-
-const fontAwesome = '<i class="fas fa-dice-one"></i>';
+import "./Die.css"
 
 class Die extends Component {
     render() {
-        let dieIcon = ``
         return (
-            <div>
-
-            </div>
+            <i className={`Die fas fa-dice-${this.props.face}`}></i>
         )
     }
 }
